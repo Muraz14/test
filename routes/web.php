@@ -14,5 +14,5 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('home', ['persons' => [['name' => 'John', 'img'=> 'https://www.shutterstock.com/image-photo/landscape-imaage-sea-sunset-260nw-336142151.jpg', 'status'=> true], ['name' => 'Jane', 'img'=> 'https://www.shutterstock.com/image-photo/landscape-imaage-sea-sunset-260nw-336142151.jpg', 'status'=> false]]]);
 });
